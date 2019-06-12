@@ -16,16 +16,7 @@ public class Book_Store {
 		driver.manage().window().maximize();
 		String currentUrl = driver.getCurrentUrl();
 		System.out.println(currentUrl);
-		String title = driver.getTitle();
-		System.out.println(title);
-		WebElement fname = driver.findElement(By.xpath("//input[@placeholder='First Name']"));
-		fname.sendKeys("johnson");
-		try {
-			Thread.sleep(8000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 		driver.quit();
 	}
 
